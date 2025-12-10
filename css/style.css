@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+    & .user-input {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+
+        & label {
+            color: #505050;
+        }
+
+
+        & input {
+            padding: 14px 26px;
+            border-radius: 6px;
+            outline: none;
+            border: 1px solid #e85b81;
+            width: 100%;
+        }
+    }
+
+
+
+    & #btnCalcular {
+        background-color: #e85b81;
+        border-radius: 6px;
+        padding: 13px;
+        font-weight: bold;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    & #btnCalcular:hover {
+        background-color: #e84671;
+    }
+}
+
+.res {
+    color: #ababab;
+    text-align: center;
+
+    & p {
+        width: 254px;
+        margin: auto;
+    }
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & div {
+        display: flex;
+    }
+
+    & div:first-child {
+        border-bottom: #e85b81 1px solid;
+        padding-bottom: 10px;
+        font-weight: 700;
+    }
+
+    & div:last-child {
+        padding-top: 10px;
+    }
+}
+
+.tabela {
+    display: flex;
+    width: 510px;
+    padding: 12px;
+    border: #f4f4f4 1px solid;
+
+    & .imc {
+        width: 260px;
+
+        & p:nth-child(odd) {
+            background-color: #f4f4f4;
+            width: 260px;
+        }
+
+        & p:first-child {
+            color: #e85b81;
+            font-weight: 700;
+
+        }
+    }
+
+    & .classificacao {
+        width: 260px;
+
+        & p:nth-child(odd) {
+            background-color: #f4f4f4;
+        }
+
+        & p:first-child {
+            color: #e85b81;
+            font-weight: 700;
+
+        }
+    }
+
+    & p {
+        padding: 12px;
+        width: 100%;
+        color: #505050;
+    }
+}
